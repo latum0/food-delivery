@@ -1,0 +1,67 @@
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+
+}
+.sign-cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 2vh;
+    color: grey;
+    
+}
+
+.sign{
+    width: 5vw;
+    height: 4vh;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    color: grey;
+    min-width: 70px;
+    
+}
+
+.sign:hover{
+    background-color: #FC4100;
+    cursor: pointer;
+    color: white;
+}
+
+.sign:active{
+    background-color: #fe5c27;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide the menu at screen sizes below 768px */
+      }
+    
+      .nav-container {
+        justify-content: space-between;
+      }
+    
+      .img-container {
+        flex-grow: 1;
+      }
+    
+      .sign-cart {
+        margin-left: auto;
+      }
+}

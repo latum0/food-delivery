@@ -1,0 +1,101 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 75vh;
+    
+}
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background: url('../../assets/header_img.png');
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+    padding-left: 7%;
+    gap: 30px;
+     
+    margin-top: 11%;  
+   
+}
+
+.content h1{
+    font-size: 8vh;
+    color: white;
+}
+
+.content button{
+    width: clamp(100px,25%,25%);
+    height:5vh;
+    border-radius: 25px;
+    color: black;
+    border: none;
+    background-color: white;
+    
+}
+
+.content button:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.content button:active{
+    background-color: rgb(73, 71, 71);
+    
+    cursor: pointer;
+}
+
+
+.content p{
+    color: white;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .nav-container {
+        background-size: contain; /* Adjust size to fit within the container */
+    }
+}
+
+/* Small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+    .hero{
+        height: 50vh;
+    }
+    .content h1{
+        font-size: 2vh;
+        color: white;
+    }
+
+    .card{
+        width: 90%;
+        height: 90%;
+    }
+
+    .nav-container {
+        background-size: 100% 100%; /* Stretch the image to cover the element */
+    }
+}
+
+/* Extra small screens (e.g., very small mobile devices) */
+@media (max-width: 480px) {
+    .nav-container {
+        background-size: auto; /* Use the image's intrinsic size */
+    }
+}
